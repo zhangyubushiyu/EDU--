@@ -1,0 +1,747 @@
+/*基础开始*/
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	font-size: 14px;
+	background: #FFF;
+	font-family: "微软雅黑", 'hiraginoSansBG w3', "黑体", "宋体";
+	width: 100%;
+}
+
+a,
+h1,
+h2,
+h3,
+span,
+p,
+em {
+	font-size: 12px;
+}
+
+input {
+	cursor: pointer;
+	border: none;
+}
+
+.wrappre {
+	width: 100%;
+	position: relative;
+}
+
+.main {
+	/*width: 100%;*/
+}
+
+
+/*@media screen and (max-width:1205px) {
+	.main {
+		min-width: 963px;
+	}*/
+
+
+/*登录窗口开始*/
+
+#play-win {
+	background: rgba(51, 51, 51, 0.85);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: none;
+
+}
+
+#loginbar {
+	width: 315px;
+	height: 245px;
+	padding: 30px 40px;
+	background: #FFF;
+	position: fixed;
+	left: 39%;
+	top: 30%;
+	display: none;
+}
+
+#loginbar h1 {
+	font-size: 18px;
+	color: #444;
+	margin-bottom: 20px;
+}
+
+#loginbar li {
+	width: 300px;
+	height: 45px;
+	background: #fafafa;
+	margin-bottom: 20px;
+	border: 1px solid #dfdfdf;
+	font-size: 16px;
+	line-height: 45px;
+	padding-left: 10px;
+	color: #ccc;
+}
+
+#loginbar input {
+	background: none;
+	height: 45px;
+	font-size: 18px;
+	width: 250px;
+	padding-left: 8px;
+	cursor: auto;
+}
+
+#loginbar #loginbar-submit {
+	background: #1ea740;
+	font-size: 16px;
+	border: none;
+	padding: 0;
+	width: 312px;
+	margin: 25px 0 0 0;
+}
+
+#loginbar-submit input {
+	color: #FFF;
+	width: 100%;
+}
+#no-login,#no-video{
+	width: 10px;
+	height: 10px;
+	background: url(../img/gb.png) no-repeat;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+/*视频窗口开始*/
+#video{
+	height: 555px;
+	width: 888px;
+	background: #FFF;
+	padding: 30px;
+	position: fixed;
+	top: 15%;
+	left: 25%;
+}
+#video p{
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: #444;
+	
+}
+
+/*头部开始*/
+
+.header {
+	margin: 0 auto;
+	background: #FFF;
+	/*max-width: 1205px;*/
+}
+
+.header-top-msg {
+	height: 40px;
+	line-height: 40px;
+	background: #f3f3f3;
+	width: 100%;
+	font-size: 12px;
+	color: #333;
+}
+
+.header-top-msg a {
+	color: #3aab65;
+	padding-left: 20px;
+}
+
+#no-notice {
+	float: right;
+	background: url(../img/gz.png) no-repeat left;
+	width: 80px;
+	cursor: pointer;
+	padding-left: 15px;
+	background-position-y: 15px;
+}
+
+.header-top-msg span {}
+
+.header-top-msgdiv {
+	max-width: 1205px;
+	margin: 0 auto;
+}
+
+.header-top-msg p {}
+
+.header-menu {
+	max-width: 1205px;
+	height: 90px;
+	margin: 0 auto;
+}
+
+.logo {
+	height: 60px;
+	width: 230px;
+	padding-top: 30px;
+	float: left;
+	margin-right: 30px;
+}
+
+.logo h1 {
+	color: #39a030;
+	font-size: 28px;
+	font-family: 'Gill Sans MT';
+	padding-right: 10px;
+	display: inline-block;
+	border-right: 1px solid #39A030;
+	line-height: 24px;
+	height: 20px;
+}
+
+.logo h2 {
+	font-size: 22px;
+	color: #333;
+	display: inline-block;
+	float: right;
+	line-height: 20px;
+	font-weight: 500;
+}
+
+.msg {
+	float: left;
+	width: 500px;
+	padding-top: 30px;
+}
+
+.msg li {
+	line-height: 22px;
+	float: left;
+}
+
+#msgButton {
+	background: #21a557;
+	color: #FFF;
+	width: 54px;
+	height: 22px;
+	line-height: 22px;
+	border-radius: 3px;
+	cursor: pointer;
+	text-align: center;
+	margin-right: 20px;
+}
+
+#msgButton:hover {
+	background: #2AB362;
+}
+
+#fans {
+	font-size: 12px;
+	color: #666;
+	cursor: pointer;
+}
+
+#fans span {
+	margin-left: 5px;
+}
+
+
+/*导航开始*/
+
+.nav {
+	float: left;
+	width: 420px;
+	padding-top: 30px;
+}
+
+.nav li {
+	float: left;
+	margin: 0 25px;
+}
+
+.nav li a {
+	color: #666;
+	font-size: 16px;
+}
+
+.nav li a:hover {
+	color: #21A557
+}
+
+.sreach {
+	float: right;
+	width: 20px;
+	height: 20px;
+	/*margin-top: 2px;*/
+}
+
+#sreachButton {
+	background: url(../img/ss-icon.png) no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+#sreachButton:hover {
+	background: url(../img/ss-icon-dl.png) no-repeat;
+	background-size: 100%;
+}
+
+
+/*banner开始*/
+
+.banner {
+	height: 460px;
+	max-width: 1652px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.banner a {}
+
+.banner a img {
+	float: left;
+	position: absolute;
+	top: 0;
+}
+
+
+/*介绍开始*/
+
+.guild {
+	height: 170px;
+	max-width: 1205px;
+	margin: 0 auto;
+	padding: 50px 0;
+	padding-left: 55px;
+}
+
+.guild li {
+	float: left;
+	width: 20.33%;
+	height: 170px;
+	padding: 0 65px 0 90px;
+	position: relative;
+	background-position-y: 15px;
+}
+
+.guild-1 {
+	background: url(../img/banner-d-1.png)no-repeat;
+}
+
+.guild-2 {
+	background: url(../img/banner-d-2.png)no-repeat;
+}
+
+.guild-3 {
+	background: url(../img/banner-d-3.png)no-repeat;
+}
+
+.guild h2 {
+	font-size: 22px;
+	color: #333;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.guild p {
+	font-size: 14px;
+	color: #666;
+	line-height: 22px;
+}
+
+.guild span a {
+	color: #39a030;
+	font-size: 14px;
+	position: absolute;
+	left: 90px;
+	bottom: 0;
+}
+
+
+/*图片滚动开始*/
+
+.scroll {
+	max-width: 1652px;
+	margin: 0 auto;
+	padding-top: 20px;
+	clear: both;
+	height: auto;
+}
+
+.scroll img {
+	float: left;
+	width: 20%;
+	border: 1px solid #FFF;
+	box-sizing: border-box;
+}
+
+
+/*课程开始*/
+
+.content-wap {
+	float: left;
+	width: 100%;
+	background: #f8f8f8;
+	padding-bottom: 120px;
+}
+
+.content {
+	max-width: 1205px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+
+/*左边样开始*/
+
+.content-left {
+	width: 995px;
+	float: left;
+}
+
+.content-left-tab {
+	height: 60px;
+	margin-bottom: 20px;
+}
+
+.content-left-tab li {
+	cursor: pointer;
+	display: inherit;
+	text-align: center;
+	height: 52px;
+	line-height: 52px;
+	width: 200px;
+	font-size: 20px;
+	color: #666;
+	float: left;
+	box-shadow: #e6e6e6 1px 2px 2px;
+	background: #FFF;
+}
+
+#Tab-active {
+	color: #fff;
+	background: #39a030;
+}
+
+.content-left-list {
+	float: left;
+	width: 100%;
+}
+
+.content-left-list li {
+	margin: 0 20px 20px 0;
+	float: left;
+	width: 22.5%;
+	padding-bottom: 8px;
+	background: #FFFFFF;
+	color: #39A030;
+	box-shadow: #e6e6e6 1px 2px 2px;
+}
+
+.content-left-list li:hover {
+	box-shadow: #e6e6e6 1px 4px 4px;
+	color: #999;
+}
+
+.content-left-list li h1:hover {
+	color: #39A030;
+}
+
+.content-left-list li img {
+	margin-bottom: 5px;
+	padding: 1px;
+}
+
+.content-left-list h1 {
+	padding-left: 8px;
+	font-size: 12px;
+	font-weight: 300;
+	margin-bottom: 8px;
+	color: #333;
+}
+
+.content-left-list li h2 {
+	font-size: 12px;
+	margin-bottom: 10px;
+	font-weight: 300;
+}
+
+.content-left-list .content-left-text a {
+	color: #999;
+}
+
+.content-left-text {
+	padding-left: 8px;
+}
+
+.content-left-text h3 {
+	display: inherit;
+	width: 32px;
+	height: 18px;
+	line-height: 20px;
+	padding-left: 13px;
+	background: url(../img/kc-icon.png) no-repeat left center;
+	font-size: 12px;
+	color: #999;
+	border: 1px solid #ddd;
+	font-weight: 300;
+	border-radius: 3px;
+	text-align: center;
+	background-position-x: 5px;
+	margin-bottom: 10px;
+}
+
+.content-left-text span {
+	color: #ff3f00;
+	font-size: 12px;
+}
+
+.content-left-text span b {
+	padding-left: 2px;
+}
+
+
+/*翻页开始*/
+
+.page {
+	float: right;
+	width: 295px;
+	height: 26px;
+	line-height: 26px;
+	margin-right: 40px;
+}
+
+#page-last,
+#page-next {
+	float: left;
+	width: 35px;
+	line-height: 26px;
+	font-size: 16px;
+	text-align: center;
+	color: #FFF;
+	background: #9dd8b1;
+	cursor: pointer;
+}
+
+#page-next {
+	float: right;
+}
+
+.page li {
+	float: left;
+	cursor: pointer;
+	margin: 0 2px;
+	padding: 0 8px;
+	line-height: 28px;
+	width: 8px;
+	font-size: 14px;
+	color: #666;
+}
+
+.page li:hover {
+	background: #9dd8b1;
+	color: #FFF;
+}
+
+#page-active {
+	color: #9DD8B1;
+}
+
+#page-active:hover {
+	background: none;
+}
+
+
+/*右边样开始*/
+
+.content-right {
+	width: 210px;
+	float: right;
+}
+
+.content-right-video {
+	width: 100%;
+	height: 232px;
+	background: #FFF;
+	box-shadow: #e6e6e6 1px 2px 2px;
+	margin-bottom: 20px;
+}
+
+.title {
+	width: auto;
+	height: 55px;
+	line-height: 55px;
+	padding-left: 20px;
+	border-bottom: 1px solid #ddd;
+	font-size: 16px;
+	background: #FFF;
+	color: #666;
+}
+
+.content-right-video h2 {
+	font-size: 14px;
+	line-height: 14px;
+	color: #666;
+	padding: 15px 0 0 20px;
+	font-weight: 300;
+}
+
+#video-bar {
+	width: 182px;
+	height: 112px;
+	margin: 10px auto;
+	background: #666;
+	position: relative;
+}
+
+#video-bar a {
+    width: 43px;
+    height: 43px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 32px;
+    left: 69px;
+}
+
+.content-right-hot {
+	width: 100%;
+	background: #FFF;
+	padding-bottom: 20px;
+	box-shadow: #E6E6E6 1px 2px 2px;
+}
+
+.content-right-hot:hover {
+	box-shadow: #999 1px 2px 4px;
+}
+
+.content-right-hot-list li {
+	margin-top: 20px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.content-right-hot-list span {
+	display: inherit;
+	width: 50px;
+	height: 25px;
+	line-height: 29px;
+	padding-left: 15px;
+	background: url(../img/list-icon.png) no-repeat left;
+	position: absolute;
+	top: 20px;
+	left: 80px;
+}
+
+.content-right-hot-list li a {
+	display: inherit;
+	/*float: left;*/
+	width: 100%;
+	height: 50px;
+	color: #333;
+	font-size: 14px;
+}
+
+.content-right-hot-list li a img {
+	float: left;
+}
+
+.content-right-hot-list li h2 {
+	display: inherit;
+	float: left;
+	padding-left: 10px;
+}
+
+
+/*底部开始*/
+
+.footer-wap {
+	width: 100%;
+	background: #2c3339;
+	clear: both;
+	color: #a2a4a5;
+}
+
+.footer-wap a {
+	color: #a2a4a5;
+}
+
+.footer {
+	max-width: 1205px;
+	margin: 0 auto;
+	padding-top: 100px;
+	height: 200px;
+}
+
+.footer-left {
+	width: 430px;
+	height: 120px;
+	float: left;
+}
+
+.foor-logo {
+	height: 40px;
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+}
+
+.footer-left p {
+	line-height: 28px;
+}
+
+.foor-logo h1 {
+	font-size: 28px;
+	color: #39a030;
+	line-height: 27px;
+	float: left;
+	padding: 0 0 28px 0;
+}
+
+.foor-logo h2 {
+	font-size: 22px;
+	border-left: 1px solid #39a030;
+	margin-left: 10px;
+	padding-left: 10px;
+	line-height: 22px;
+	float: left
+}
+
+.footer-right {
+	float: right;
+}
+
+.footer-right a:hover,
+.guild span a:hover {
+	text-decoration: underline;
+}
+
+.footer-right p {
+	margin-bottom: 15px;
+}
+
+.footer-right p a {
+	line-height: 18px;
+	font-size: 14px;
+}
+
+.friendlink {
+	float: left;
+	width: 130px;
+	height: 120px;
+}
+
+.we,
+.more {
+	width: 70px;
+	height: 120px;
+	float: left;
+	margin-left: 50px;
+}
+
+.we a img {
+	float: right;
+	padding-right: 15px;
+}

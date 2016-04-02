@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>网易云课堂</title>
+		<link rel="stylesheet" type="text/css" href="css/master.css" />
+	</head>
+	<body>
+		<!--最外层开始-->
+		<div class="wrappre">
+			<!--弹窗口开始-->
+			<div id="play-win">
+				<!--登录窗口开始-->
+				<div id="loginbar">
+					<div id="no-login"></div>
+					<h1>登录网易云课堂</h1>
+					<form action="" method="post">
+						<li><label for="name">账号</label><input type="text" name="name" value="" /></li>
+						<li><label for="password">密码</label><input type="password" name="password" /></li>
+						<li id="loginbar-submit"> <input type="submit" value="登 录" /></li>
+
+					</form>
+				</div>
+				<!--登录窗口结束-->
+				<!--视频窗口开始-->
+				<div id="video">
+					<p>请观看下面的视频</p>
+					<div id="no-video"></div>
+					<video src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4" width="888" height="508" controls="controls" preload="preload"></video>
+				</div>
+				<!--视频窗口结束-->
+			</div>
+			<!--弹窗口结束-->
+			<!--头部开始-->
+			<div class="header">
+				<!--消息提醒开始-->
+				<div class="header-top-msg">
+					<div class="header-top-msgdiv">
+						网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势！ <a href="">立即查看></a>
+						<div id="no-notice">
+							<span>不再提醒</span>
+						</div>
+					</div>
+				</div>
+				<!--消息提醒结束-->
+				<!--头部菜单内容开始-->
+				<div class="header-menu">
+					<!--logo开始-->
+					<div class="logo">
+						<h1>EDU</h1>
+						<h2>网易教育产品部</h2>
+					</div>
+					<!--logo结束-->
+					<!--关注提示开始-->
+					<div class="msg">
+						<li id="msgButton">+ 关注</li>
+						<li id="fans">粉丝<span>45</span></li>
+						<li id=""><span>已关注</span><a href="">取消</a></li>
+					</div>
+					<!--关注提示结束-->
+					<!--导航开始-->
+					<div class="nav">
+						<ul>
+							<li><a href="">网易公开课</a></li>
+							<li><a href="">云课堂</a></li>
+							<li><a href="">中国大学MOOC</a></li>
+						</ul>
+						<!--搜索开始-->
+						<div class="sreach">
+							<input type="button" id="sreachButton" value="" />
+						</div>
+						<!--搜索结束-->
+					</div>
+					<!--导航结束-->
+
+				</div>
+				<!--头部菜单结束-->
+			</div>
+			<!--头部结束-->
+			<!--banner开始-->
+			<div class="banner">
+				<a href=""><img src="img/banner1.jpg" alt="" /></a>
+				<a href=""><img src="img/banner2.jpg" alt="" /></a>
+				<a href=""><img src="img/banner3.jpg" alt="" /></a>
+			</div>
+			<!--banner结束-->
+			<!--介绍开始-->
+			<div class="guild">
+				<ul>
+					<li class="guild-1">
+						<h2>网易公开课</h2>
+						<p>
+							推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。
+						</p>
+						<span><a href="">了解更多 ></a></span>
+					</li>
+					<li class="guild-2">
+						<h2>云课堂</h2>
+						<p>
+							网易旗下大型在线学习平台，该平台面向学习者提供海量免费、优质课程,创新的个性化学习体验，自由开放的交流互动环境。
+						</p>
+						<span><a href="">了解更多 ></a></span>
+					</li>
+					<li class="guild-3">
+						<h2>中国大学MOOC</h2>
+						<p>
+							是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人,都可以在这里学习中国最好的大学课程，学完还能获得认证证书。
+						</p>
+						<span><a href="">了解更多 ></a></span>
+					</li>
+				</ul>
+			</div>
+			<!--介绍结束-->
+
+			<!--图片滚动开始-->
+			<div class="scroll">
+				<ul>
+					<marquee behavior="alternate" onMouseOver="this.stop()" onMouseOut="this.start()">
+						<li><img src="img/gz-1.png" alt="" /></li>
+						<li><img src="img/gz-2.png" alt="" /></li>
+						<li><img src="img/gz-3.png" alt="" /></li>
+						<li><img src="img/gz-4.png" alt="" /></li>
+						<li><img src="img/gz-5.png" alt="" /></li>
+					</marquee>
+				</ul>
+			</div>
+			<!--图片滚动结束-->
+			<!--课程lsit开始-->
+			<div class="content-wap">
+				<div class="content">
+					<!--左边课程开始-->
+					<div class="content-left">
+						<!--Tab标签开始-->
+						<div class="content-left-tab">
+							<ul>
+								<li id="Tab-active">产品设计</li>
+								<li>编程语言</li>
+							</ul>
+						</div>
+						<!--Tab标签结束-->
+						<!--左边课程list开始-->
+						<div class="content-left-list">
+							<ul>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2><a href="">音频帮</a></h2>
+										<h3>510</h3>
+										<span>¥<b>800.00</b></span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/kc-img.png" alt="产品" title="产品">
+										<h1>混音全揭秘 舞曲实战篇 揭秘音乐揭秘...</h1>
+									</a>
+									<div class="content-left-text">
+										<h2>音频帮</h2>
+										<h3>510</h3>
+										<span>¥800.00</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!--左边课程list结束-->
+						<!--翻页开始-->
+						<div class="page">
+							<div id="page-last">
+								< </div>
+									<div id="page-nav">
+										<ul>
+											<li id="page-active">1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+											<li>6</li>
+											<li>7</li>
+											<li>8</li>
+										</ul>
+									</div>
+									<div id="page-next">></div>
+							</div>
+							<!--翻页结束-->
+						</div>
+						<!--左边课程结束-->
+						<!--右边课程开始-->
+						<div class="content-right">
+							<!--机构视频介绍开始-->
+							<div class="content-right-video">
+								<div class="title">机构介绍</div>
+								<h2>观看下面的视频来了解吧：</h2>
+								<div id="video-bar">
+									<img src="img/sp-but.png"/><a href=""></a>
+								</div>
+							</div>
+							<!--机构视频介绍结束-->
+							<!--热门排行开始-->
+							<div class="content-right-hot">
+								<div class="title">最热排行</div>
+								<!--热门排行list开始-->
+								<dvi class="content-right-hot-list">
+									<ul>
+										<li>
+											<a href="">
+												<img src="img/hot_03.png" alt="图片" />
+												<h2>舞曲揭秘音乐揭秘</h2>
+											</a>
+											<span>21567</span>
+										</li>
+										<li>
+											<a href="">
+												<img src="img/hot_03.png" alt="图片" />
+												<h2>舞曲揭秘音乐揭秘</h2>
+											</a>
+											<span>21567</span>
+										</li>
+										<li>
+											<a href="">
+												<img src="img/hot_03.png" alt="图片" />
+												<h2>舞曲揭秘音乐揭秘</h2>
+											</a>
+											<span>21567</span>
+										</li>
+										<li>
+											<a href="">
+												<img src="img/hot_03.png" alt="图片" />
+												<h2>舞曲揭秘音乐揭秘</h2>
+											</a>
+											<span>21567</span>
+										</li>
+										<li>
+											<a href="">
+												<img src="img/hot_03.png" alt="图片" />
+												<h2>舞曲揭秘音乐揭秘</h2>
+											</a>
+											<span>21567</span>
+										</li>
+										<li>
+											<a href="">
+												<img src="img/hot_03.png" alt="图片" />
+												<h2>舞曲揭秘音乐揭秘</h2>
+											</a>
+											<span>21567</span>
+										</li>
+										<li>
+											<a href="">
+												<img src="img/hot_03.png" alt="图片" />
+												<h2>舞曲揭秘音乐揭秘</h2>
+											</a>
+											<span>21567</span>
+										</li>
+										<li>
+											<a href="">
+												<img src="img/hot_03.png" alt="图片" />
+												<h2>舞曲揭秘音乐揭秘</h2>
+											</a>
+											<span>21567</span>
+										</li>
+										<li>
+											<a href="">
+												<img src="img/hot_03.png" alt="图片" />
+												<h2>舞曲揭秘音乐揭秘</h2>
+											</a>
+											<span>21567</span>
+										</li>
+										<li>
+											<a href="">
+												<img src="img/hot_03.png" alt="图片" />
+												<h2>舞曲揭秘音乐揭秘</h2>
+											</a>
+											<span>21567</span>
+										</li>
+										<li>
+											<a href="">
+												<img src="img/hot_03.png" alt="图片" />
+												<h2>舞曲揭秘音乐揭秘</h2>
+											</a>
+											<span>21567</span>
+										</li>
+									</ul>
+							</div>
+							<!--热门列表结束-->
+						</div>
+						<!--右边课程结束-->
+					</div>
+				</div>
+				<!--课程list结束-->
+				<!--底部开始-->
+				<div class="footer-wap">
+					<div class="footer">
+						<div class="footer-left">
+							<!--底部logo开始-->
+							<div class="foor-logo">
+								<h1>EDU</h1>
+								<h2>网易教育产品部</h2>
+							</div>
+							<!--底部logo结束-->
+							<p>©2014 icourse163.org 浙ICP备08114786号-1</p>
+							<p>icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</p>
+						</div>
+						<div class="footer-right">
+							<!--友情链接开始-->
+							<div class="friendlink">
+								<p>友情链接：</p>
+								<p>
+									<a href="">网易公开课</a>
+								</p>
+								<p>
+									<a href="">网易云课堂</a>
+								</p>
+								<p>
+									<a href="">中国大学MOOC</a>
+								</p>
+							</div>
+							<!--友情链接结束-->
+							<!--关于我们开始-->
+							<div class="we">
+								<p>我们:</p>
+								<p><a href="">关于</a></p>
+								<p><a href="">联系</a></p>
+								<p>
+									<a href=""><img src="img/weibo.png" alt="微博" />关注</a>
+								</p>
+							</div>
+							<!--关于我们结束-->
+							<!--更多开始-->
+							<div class="more">
+								<p>更多：</p>
+								<p><a href="">常见问题</a></p>
+								<p><a href="">意见反馈</a></p>
+							</div>
+							<!--更多结束-->
+						</div>
+					</div>
+				</div>
+				<!--底部结束-->
+			</div>
+			<!--最外层结束-->
+	</body>
+
+</html>
