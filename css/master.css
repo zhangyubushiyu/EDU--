@@ -270,10 +270,12 @@ input {
 	color: #999;
 	padding-left: 5px;
 }
-#msgButton-2 a:hover{
+
+#msgButton-2 a:hover {
 	color: #21a557;
 	text-decoration: underline;
 }
+
 
 /*导航开始*/
 
@@ -419,22 +421,26 @@ input {
 /*图片滚动开始*/
 
 .scroll {
-	width: 100%;
+	height: 220px;
 	padding-top: 20px;
-	height: auto;
-	float: left;
-	min-width: 1625px;
+	overflow: hidden;
+	min-width: 1025px;
+	max-width: 1625px;
+	margin: 0 auto;
 }
 
 .scroll ul {
-	max-width: 1625px;
-	margin: 0 auto;
-	height: 221px;
+	height: 220px;
+	min-width: 200%;
+}
+
+.scroll ul li {
+	float: left;
 }
 
 .scroll img {
+	display: block;
 	float: left;
-	width: auto;
 	border: 1px solid #FFF;
 	box-sizing: border-box;
 }
@@ -555,7 +561,7 @@ input {
 	border-radius: 3px;
 	text-align: center;
 	background-position-x: 5px;
-	background-position:5px;
+	background-position: 5px;
 	margin-bottom: 10px;
 }
 
