@@ -270,19 +270,12 @@ input {
 	color: #999;
 	padding-left: 5px;
 }
-<<<<<<< HEAD
 
 #msgButton-2 a:hover {
 	color: #21a557;
 	text-decoration: underline;
 }
 
-=======
-#msgButton-2 a:hover{
-	color: #21a557;
-	text-decoration: underline;
-}
->>>>>>> gh-pages
 
 /*导航开始*/
 
@@ -329,190 +322,17 @@ input {
 
 .banner {
 	height: 460px;
-	width: 1652px;
+	max-width: 1652px;
 	position: relative;
 	margin: 0 auto;
-	overflow: hidden;
 }
 
-.banner-ul {
-	width: 300%;
-	height: 100%;
-	position: relative;
-	left: 0;
-	transition: 0.5s left;
-	font-size: 0;
-	word-spacing: 0;
-	letter-spacing: 0;
-}
+.banner a {}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.banner ul li {
-	float: left;
-	display: inline-block;
-}
-
-.banner a {
-	display: inline-block;
-}
-
-#banner-1:target~.banner-ul {
-	left: 0;
-}
-
-#banner-2:target~.banner-ul {
-	left: -100%;
-}
-
-#banner-3:target~.banner-ul {
-	left: -200%;
-}
-
-.bannerBar {
-	width: 80px;
-	height: 25px;
-=======
 .banner a img {
 	min-width: 1205px;
-<<<<<<< HEAD
-=======
->>>>>>> origin/gh-pages
-=======
-.banner a img {
-	min-width: 1205px;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> origin/gh-pages
 	position: absolute;
-	bottom: 5px;
-	left: 47.5%;
-}
-
-.bannerBar a {
-	display: inline-block;
-	margin: 5px;
-	width: 11px;
-	height: 11px;
-	border-radius: 50%;
-	background: #FFF;
-}
-
-.bannerbar {
-	width: 65px;
-	line-height: 11px;
-	position: absolute;
-	bottom: 20px;
-	left: 48%;
-	z-index: 11;
-}
-
-.bannerbar li {
-	float: left;
-	margin: 0 5px;
-}
-
-.bannerbar a {
-	display: inherit;
-	width: 10px;
-	height: 10px;
-	background: #fff;
-	border-radius: 50%;
-}
-
-#banner-active {
-	background: #000;
-	width: 11px;
-	height: 11px;
-}
-
-.bannerbar {
-	width: 65px;
-	line-height: 11px;
-=======
->>>>>>> origin/gh-pages
-=======
->>>>>>> origin/gh-pages
->>>>>>> gh-pages
-	position: absolute;
-	bottom: 20px;
-	left: 48%;
-	z-index: 11;
-}
-
-.bannerbar li {
-	float: left;
-	margin: 0 5px;
-}
-
-.bannerbar a {
-	display: inherit;
-	width: 10px;
-	height: 10px;
-	background: #fff;
-	border-radius: 50%;
-}
-
-#banner-active {
-	background: #000;
-	width: 11px;
-	height: 11px;
-}
-
-.bannerbar {
-	width: 65px;
-	line-height: 11px;
-	position: absolute;
-	bottom: 20px;
-	left: 48%;
-	z-index: 11;
-}
-
-.bannerbar li {
-	float: left;
-	margin: 0 5px;
-}
-
-.bannerbar a {
-	display: inherit;
-	width: 10px;
-	height: 10px;
-	background: #fff;
-	border-radius: 50%;
-}
-
-#banner-active {
-	background: #000;
-	width: 11px;
-	height: 11px;
-}
-
-.bannerbar {
-	width: 65px;
-	line-height: 11px;
-	position: absolute;
-	bottom: 20px;
-	left: 48%;
-	z-index: 11;
-}
-
-.bannerbar li {
-	float: left;
-	margin: 0 5px;
-}
-
-.bannerbar a {
-	display: inherit;
-	width: 10px;
-	height: 10px;
-	background: #fff;
-	border-radius: 50%;
-}
-
-#banner-active {
-	background: #000;
-	width: 11px;
-	height: 11px;
+	top: 0;
 }
 
 .bannerbar {
@@ -600,7 +420,6 @@ input {
 
 /*图片滚动开始*/
 
-<<<<<<< HEAD
 .scroll {
 	height: 220px;
 	padding-top: 20px;
@@ -622,99 +441,6 @@ input {
 .scroll img {
 	display: block;
 	float: left;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-#scroll {
-	height: 220px;
-	margin: 0 auto;
-	max-width: 1652px;
-	min-width: 1205px;
-	padding-top: 20px;
-	overflow: hidden;
-
-}
-#scroll ul{
-	height: 220px;
-	
-=======
-=======
->>>>>>> origin/gh-pages
-=======
->>>>>>> origin/gh-pages
-=======
->>>>>>> origin/gh-pages
-.scroll {
-	width: 100%;
-	padding-top: 20px;
-	height: auto;
-	float: left;
-	min-width: 1625px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-=======
-}
-
-.scroll ul {
-	max-width: 1625px;
-	margin: 0 auto;
-	height: 221px;
->>>>>>> origin/gh-pages
-}
-
-.scroll ul {
-	max-width: 1625px;
-	margin: 0 auto;
-	height: 221px;
->>>>>>> origin/gh-pages
-}
-
-.scroll ul {
-	max-width: 1625px;
-	margin: 0 auto;
-	height: 221px;
->>>>>>> origin/gh-pages
-}
-
-.scroll ul {
-	max-width: 1625px;
-	margin: 0 auto;
-	height: 221px;
->>>>>>> origin/gh-pages
-}
-#scroll-list {
-	float: left;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-}
-
-#scroll-ed {
-	width: 200%;
-}
-
-#scroll img {
-	float: left;
-<<<<<<< HEAD
-=======
-	width: auto;
->>>>>>> origin/gh-pages
-=======
-	width: auto;
->>>>>>> origin/gh-pages
-=======
-	width: auto;
->>>>>>> origin/gh-pages
-=======
-	width: auto;
->>>>>>> origin/gh-pages
->>>>>>> gh-pages
 	border: 1px solid #FFF;
 	box-sizing: border-box;
 }
@@ -835,11 +561,7 @@ input {
 	border-radius: 3px;
 	text-align: center;
 	background-position-x: 5px;
-<<<<<<< HEAD
 	background-position: 5px;
-=======
-	background-position:5px;
->>>>>>> gh-pages
 	margin-bottom: 10px;
 }
 
