@@ -12,6 +12,7 @@ body {
 	background: #FFF;
 	font-family: "微软雅黑", 'hiraginoSansBG w3', "黑体", "宋体";
 	width: 100%;
+	min-width: 1280px;
 }
 
 a,
@@ -321,18 +322,35 @@ input {
 /*banner开始*/
 
 .banner {
-	height: 460px;
+	overflow: hidden;
 	max-width: 1652px;
 	position: relative;
+	min-width: 1025px;
+	max-height: 460px;
+	min-height: 333px;
 	margin: 0 auto;
+	
+}
+.banner ul{
+	width: 300%;
+	
+	}
+	
+
+.banner ul li {
+	float: left;
+	/*width: 100%;*/
+	min-height: 333px;
+	max-height: 460px;
+
 }
 
-.banner a {}
-
-.banner a img {
-	min-width: 1205px;
+.banner ul li img {
+	/*min-width: 1205px;
 	position: absolute;
-	top: 0;
+	top: 0;*/
+	/*width: 100%;*/
+	
 }
 
 .bannerbar {
@@ -343,29 +361,24 @@ input {
 	left: 48%;
 	z-index: 11;
 }
-
 .bannerbar li {
 	float: left;
 	margin: 0 5px;
 }
-
-.bannerbar a {
+.banner .bannerbar li a {
 	display: inherit;
 	width: 10px;
 	height: 10px;
 	background: #fff;
 	border-radius: 50%;
 }
-
 #banner-active {
 	background: #000;
 	width: 11px;
 	height: 11px;
 }
 
-
 /*介绍开始*/
-
 .guild {
 	height: 170px;
 	max-width: 1205px;
@@ -374,7 +387,6 @@ input {
 	padding: 50px 0;
 	padding-left: 55px;
 }
-
 .guild li {
 	float: left;
 	width: 20.33%;
@@ -383,32 +395,26 @@ input {
 	position: relative;
 	background-position-y: 15px;
 }
-
 .guild-1 {
 	background: url(../img/banner-d-1.png)no-repeat;
 }
-
 .guild-2 {
 	background: url(../img/banner-d-2.png)no-repeat;
 }
-
 .guild-3 {
 	background: url(../img/banner-d-3.png)no-repeat;
 }
-
 .guild h2 {
 	font-size: 22px;
 	color: #333;
 	font-weight: 300;
 	margin-bottom: 20px;
 }
-
 .guild p {
 	font-size: 14px;
 	color: #666;
 	line-height: 22px;
 }
-
 .guild span a {
 	color: #39a030;
 	font-size: 14px;
@@ -417,9 +423,7 @@ input {
 	bottom: 0;
 }
 
-
 /*图片滚动开始*/
-
 .scroll {
 	height: 220px;
 	padding-top: 20px;
@@ -428,16 +432,13 @@ input {
 	max-width: 1625px;
 	margin: 0 auto;
 }
-
 .scroll ul {
 	height: 220px;
-	min-width: 200%;
+	min-width: 400%;
 }
-
 .scroll ul li {
 	float: left;
 }
-
 .scroll img {
 	display: block;
 	float: left;
@@ -445,38 +446,32 @@ input {
 	box-sizing: border-box;
 }
 
-
 /*课程开始*/
-
 .content-wap {
 	float: left;
 	width: 100%;
 	background: #f8f8f8;
 	padding-bottom: 120px;
 }
-
 .content {
 	width: 1205px;
 	/*min-width: 963px;*/
+	
 	margin: 0 auto;
 	padding-top: 100px;
 }
 
-
 /*左边样开始*/
-
 .content-left {
 	width: 968px;
 	float: left;
 	margin-left: -20px;
 }
-
 .content-left-tab {
 	height: 60px;
 	margin: 0 0 20px 20px;
 	float: left;
 }
-
 .content-left-tab li {
 	cursor: pointer;
 	display: inherit;
@@ -490,17 +485,14 @@ input {
 	box-shadow: #e6e6e6 1px 2px 2px;
 	background: #FFF;
 }
-
 #Tab-active {
 	color: #fff;
 	background: #39a030;
 }
-
 .content-left-list {
 	float: left;
 	width: 100%;
 }
-
 .content-left-list li {
 	margin: 0 0 18px 18px;
 	float: left;
@@ -510,21 +502,17 @@ input {
 	color: #39A030;
 	box-shadow: #e6e6e6 1px 2px 2px;
 }
-
 .content-left-list li:hover {
 	box-shadow: #999 1px 4px 4px;
 	color: #999;
 }
-
 .content-left-list li h1:hover {
 	color: #39A030;
 }
-
 .content-left-list li img {
 	margin-bottom: 5px;
 	width: 100%;
 }
-
 .content-left-list h1 {
 	padding-left: 8px;
 	font-size: 12px;
@@ -532,21 +520,17 @@ input {
 	margin-bottom: 8px;
 	color: #333;
 }
-
 .content-left-list li h2 {
 	font-size: 12px;
 	margin-bottom: 10px;
 	font-weight: 300;
 }
-
 .content-left-list .content-left-text a {
 	color: #999;
 }
-
 .content-left-text {
 	padding-left: 8px;
 }
-
 .content-left-text h3 {
 	display: inherit;
 	width: 32px;
@@ -564,26 +548,21 @@ input {
 	background-position: 5px;
 	margin-bottom: 10px;
 }
-
 .content-left-text span {
 	color: #ff3f00;
 	font-size: 12px;
 }
-
 .content-left-text span b {
 	padding-left: 2px;
 }
 
-
 /*翻页开始*/
-
 .page {
 	float: right;
 	width: 295px;
 	height: 26px;
 	line-height: 26px;
 }
-
 #page-last,
 #page-next {
 	float: left;
@@ -595,11 +574,9 @@ input {
 	background: #9dd8b1;
 	cursor: pointer;
 }
-
 #page-next {
 	float: right;
 }
-
 .page li {
 	float: left;
 	cursor: pointer;
@@ -610,28 +587,22 @@ input {
 	font-size: 14px;
 	color: #666;
 }
-
 .page li:hover {
 	background: #9dd8b1;
 	color: #FFF;
 }
-
 #page-active {
 	color: #9DD8B1;
 }
-
 #page-active:hover {
 	background: none;
 }
 
-
 /*右边样开始*/
-
 .content-right {
 	width: 227px;
 	float: right;
 }
-
 .content-right-video {
 	width: 100%;
 	height: 232px;
@@ -639,7 +610,6 @@ input {
 	box-shadow: #e6e6e6 1px 2px 2px;
 	margin-bottom: 20px;
 }
-
 .title {
 	width: auto;
 	height: 55px;
@@ -650,7 +620,6 @@ input {
 	background: #FFF;
 	color: #666;
 }
-
 .content-right-video h2 {
 	font-size: 14px;
 	line-height: 14px;
@@ -658,7 +627,6 @@ input {
 	padding: 15px 0 0 20px;
 	font-weight: 300;
 }
-
 #video-bar {
 	width: 182px;
 	height: 112px;
@@ -666,7 +634,6 @@ input {
 	background: #666;
 	position: relative;
 }
-
 #video-bar a {
 	width: 43px;
 	height: 43px;
@@ -676,24 +643,20 @@ input {
 	top: 32px;
 	left: 69px;
 }
-
 .content-right-hot {
 	width: 100%;
 	background: #FFF;
 	padding-bottom: 20px;
 	box-shadow: #E6E6E6 1px 2px 2px;
 }
-
 .content-right-hot:hover {
 	box-shadow: #999 1px 2px 4px;
 }
-
 .content-right-hot-list li {
 	margin-top: 20px;
 	padding-left: 20px;
 	position: relative;
 }
-
 .content-right-hot-list span {
 	display: inherit;
 	width: 50px;
@@ -705,64 +668,54 @@ input {
 	top: 20px;
 	left: 80px;
 }
-
 .content-right-hot-list li a {
 	display: inherit;
 	/*float: left;*/
+	
 	width: 100%;
 	height: 50px;
 	color: #333;
 	font-size: 14px;
 }
-
 .content-right-hot-list li a img {
 	float: left;
 }
-
 .content-right-hot-list li h2 {
 	display: inherit;
 	float: left;
 	padding-left: 10px;
 }
 
-
 /*底部开始*/
-
 .footer-wap {
 	width: 100%;
 	background: #2c3339;
 	clear: both;
 	color: #a2a4a5;
 }
-
 .footer-wap a {
 	color: #a2a4a5;
 }
-
 .footer {
 	max-width: 1205px;
 	margin: 0 auto;
 	padding-top: 100px;
 	height: 200px;
 }
-
 .footer-left {
 	width: 430px;
 	height: 120px;
 	float: left;
 }
-
 .foor-logo {
 	height: 40px;
 	width: 100%;
 	float: left;
 	margin-top: 20px;
 }
-
 .footer-left p {
 	line-height: 28px;
 }
-
 .foor-logo h1 {
 	font-size: 28px;
 	color: #39a030;
@@ -770,7 +723,6 @@ input {
 	float: left;
 	padding: 0 0 28px 0;
 }
-
 .foor-logo h2 {
 	font-size: 22px;
 	border-left: 1px solid #39a030;
@@ -780,31 +732,25 @@ input {
 	height: 22px;
 	float: left
 }
-
 .footer-right {
 	float: right;
 }
-
 .footer-right a:hover,
 .guild span a:hover {
 	text-decoration: underline;
 }
-
 .footer-right p {
 	margin-bottom: 15px;
 }
-
 .footer-right p a {
 	line-height: 18px;
 	font-size: 14px;
 }
-
 .friendlink {
 	float: left;
 	width: 130px;
 	height: 120px;
 }
-
 .we,
 .more {
 	width: 70px;
@@ -812,7 +758,6 @@ input {
 	float: left;
 	margin-left: 50px;
 }
-
 .we a img {
 	float: right;
 	padding-right: 15px;
